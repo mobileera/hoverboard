@@ -34,4 +34,9 @@ deploy:
   project: mobileera-2017-dev
   token:
     secure: ZY0g9av5n0ZGWxLQlM+oda6rvjXCXpKvak3XbXWAr5N84SpoxiK8hs6/rI4mZWaJdF/FJRkihLRKbm+0kByucuX6o171CdKw+fWr6JVYlo9Ab2Of9u4wbXf1s6ziXDgfUzp+Bn20GSq7MMESg84w0gk+gr6V1nsfpu0EOgnmj7wWgNI4dSWZqpcog+cmt1pIulxgf2tKWbLEts9C63eP/xVjaIEXkI3qwN9xRYg5SYY31yh+OsHvvy2Hnh0QZuBIua/6UkZqi1QB1zyMOh6A5lVrAIcqycNAjuzcsfFUeCGpYPDvb5f+U98bsZlSIczi6QW0zmPRizGgqTmhEwRmzUpv6T2qtw5atEqbkDhglE8FOvQhbwpDMmfwpBh+71yjEO7FQApyWlXryXNyzvuv8jZpCSziO7qCnDcH+WDcpfYMfQRNlb3ObsXwHNIkJXHe2bk7NGXKGB6FBfrmzyRncTtPumt828/GjWSDZWe1ySr26/WyhuIHJTc07WF7R4Z+eiDXtwQEFugjEaSXeXpn8PMrxSJMaR4imENV3pbrIqQavmK5+AKtMrga8SAHXrfHZPcSBsJUrUFR797cv6Fpu8o0kNSV8+m0MW1XEv/NyeKrObzSY2ULKnjOsmrsZO75afvuJmyauTR5aI5yFf74xP9gcDj/0dUFfvgZDTPQP4k=
+notifications:
+  email:
+    on_failure: change
+    on_success: change
+    slack: mobileera:96snQNyOnZ38cHEq3t7YyVyy
 
