@@ -3,27 +3,27 @@
     "id": "mobileera-2016-summary",
     "title": "Mobile Era 2016 Summary",
     "posted": "2017-03-18",
-    "primaryColor": "#5a7785",
-    "secondaryColor": "#455a64",
-    "image": "/images/posts/summary.jpg",
+    "primaryColor": "#00aac6",
+    "secondaryColor": "#00aac6",
+    "image": "/images/posts/blog_1.jpg",
     "brief": "Mobile Era 2016 is now over. It was a great success. We are happy to share with you some facts, emotions and, of course, photos from the biggest mobile developers conference in Norway!"
   },
   {
     "id": "mobileera-2017-announced",
     "title": "Mobile Era 2017 Announced",
     "posted": "2017-03-19",
-    "primaryColor": "#00BCD4",
-    "secondaryColor": "#00BCD4",
-    "image": "/images/posts/announce.jpg",
+    "primaryColor": "#00aac6",
+    "secondaryColor": "#00aac6",
+    "image": "/images/posts/blog_2.jpg",
     "brief": "Mobile Era Conference team is proud to announce the second annual Mobile Era 2017 which is the largest mobile related event in Nordics carefully crafted by community! The event will take place on **19-20th of October** in **Oslo**."
   },
   {
     "id": "c4p-time",
     "title": "Call for Papers Time",
     "posted": "2017-03-19",
-    "primaryColor": "#3F51B5",
-    "secondaryColor": "#3F51B5",
-    "image": "/images/posts/c4p-is-open.jpg",
+    "primaryColor": "#00aac6",
+    "secondaryColor": "#00aac6",
+    "image": "/images/posts/blog_3.jpg",
     "brief": "Mobile Era 2017 announced! The 2th edition of the biggest conference about mobile technologies in Nordics will take on **October 19-20** in Oslo. That means that it is time to open [call for talk submissions](http://bit.ly/mobileera17-cfp)."
   }
 ]

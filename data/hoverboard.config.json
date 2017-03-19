@@ -12,8 +12,8 @@
   },
   "webapp": {
     "shortName": "Mobile Era",
-    "themeColor": "#F57C00",
-    "backgroundColor": "#F57C00"
+    "themeColor": "#00aac6",
+    "backgroundColor": "#00aac6"
   },
   "firebase": {
     "name": "Mobile Era 2017 Conference",
@@ -30,7 +30,7 @@
   },
   "hashtag": "mobileera",
   "disqusShortName": "mobileera",
-  "tweetsSource": "http://webmax.ru/tweetledee/favoritesjson.php?c=10&cache_interval=8000",
+  "tweetsSource": "https://mobileera-tweetledee.herokuapp.com/tweetledee/favoritesjson.php?c=10&cache_interval=8000",
   "partnershipProposition": "mailto:contact@mobileera.rocks",
   "videosSessionsUrl": "https://vimeo.com/mobileera/",
   "enableSessionsRating": true,
@@ -40,8 +40,8 @@
       "permalink": "/"
     },
     {
-      "route": "blog",
-      "permalink": "/blog/"
+      "route": "news",
+      "permalink": "/news/"
     }
   ],
   "social": [
@@ -95,23 +95,23 @@
     "home": {
       "title": "Home",
       "headerSettings": {
-        "backgroundColor": "#FF9800",
+        "backgroundColor": "#00aac6",
         "backgroundImage": "/images/backgrounds/home.jpg",
         "fontColor": "#fff",
         "tabBarColor": "#fff",
         "video": {
-          "title": "Mobile Era 2017",
-          "youtubeId": "Z5a1WNE14Nw",
+          "title": "Mobile Era 2016 Recap",
+          "youtubeId": "-5svVhDWJPU",
           "text": "See how it was in 2016"
         },
         "hideLogo": true,
         "minHeight": "360px"
       }
     },
-    "blog": {
-      "title": "Blog",
+    "news": {
+      "title": "News",
       "headerSettings": {
-        "backgroundColor": "#03a9f4",
+        "backgroundColor": "#00aac6",
         "fontColor": "#fff",
         "tabBarColor": "#fff"
       }
@@ -119,7 +119,7 @@
     "cod": {
       "title": "Cod of Conduct",
       "headerSettings": {
-        "backgroundColor": "#673ab7",
+        "backgroundColor": "#00aac6",
         "fontColor": "#fff",
         "tabBarColor": "#fff"
       }
@@ -127,7 +127,7 @@
     "speakers": {
       "title": "Speakers",
       "headerSettings": {
-        "backgroundColor": "#3f51b5",
+        "backgroundColor": "#00aac6",
         "fontColor": "#fff",
         "tabBarColor": "#fff"
       }
@@ -135,7 +135,7 @@
     "schedule": {
       "title": "Schedule",
       "headerSettings": {
-        "backgroundColor": "#673ab7",
+        "backgroundColor": "#00aac6",
         "fontColor": "#fff",
         "tabBarColor": "#fff"
       }
@@ -143,7 +143,7 @@
     "team": {
       "title": "Team",
       "headerSettings": {
-        "backgroundColor": "#009688",
+        "backgroundColor": "#00aac6",
         "fontColor": "#fff",
         "tabBarColor": "#fff"
       }

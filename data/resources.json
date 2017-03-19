@@ -1,11 +1,11 @@
 {
-  "title": "Mobile Era 2017 - Nordics's main conference for mobile developers",
+  "title": "Mobile Era 2017 - Northern Europe's Premier conference for Mobile Developers",
   "description": "Mobile Era is Norway's first and Nordics's largest conference for mobile developers, it will be held October 19th - 20th in Oslo and will feature speakers from all over the world talking about Android, iOS and cross-platform technologies.",
   "keywords": "event, mobileera, mobile, oslo, programming, android, ios, developers, hybrid",
   "dates": "October 19-20, 2017",
   "locationAddressShort": "Oslo, Norway",
-  "motto": "Be a mobile hero!",
-  "playIcon": "See how it was in 2016",
+  "motto": "",
+  "playIcon": "See a short summary video from 2016",
   "c4p": "Become a speaker",
   "buyTicket": "Buy ticket",
   "backToTop": "Back to top",
@@ -31,7 +31,7 @@
   "locationTitle": "Felix Conference Centre",
   "locationDescription": "Felix Conference Centre is centrally located in the middle of Aker Brygge and is one of the largest freestanding convention centers in Oslo.",
   "locationAddress": "Bryggetorget 3, 0250 Oslo",
-  "organizerTitle": "Organizer",
+  "organizerTitle": "Organizers",
   "aboutOrganizers": "Mobile Era is organized by a team of enthusiasts across several technology companies in Oslo. We're passionate about developing mobile apps and want to see a kick-ass event in Oslo for people like ourselves. The organizing committee consists of developers who are also active in organizing open events, conferences and meetups in the Oslo developer community.",
   "openTeamPage": "Our team",
   "whatIsGdg": "Want to help in 2017?",
@@ -119,7 +119,7 @@
     }
   ],
   "callToAction": {
-    "videoTitle": "Mobile Era 2016",
-    "videoId": "Z5a1WNE14Nw"
+    "videoTitle": "Mobile Era 2016 Recap",
+    "videoId": "-5svVhDWJPU"
   }
 }

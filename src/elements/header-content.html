@@ -70,23 +70,26 @@
       }
 
       .logo {
-        width: 240px;
+        width: 280px;
         min-height: 80px;
       }
 
       .dates {
         font-size: 18px;
         text-transform: uppercase;
+        padding-left: 85px;
       }
 
       .motto {
         margin-top: 20px;
         font-size: 22px;
         line-height: 1;
+        padding-left: 85px;
       }
 
       .action-buttons {
         margin-top: 40px;
+        padding-left: 85px;
       }
 
       paper-button {
@@ -100,6 +103,7 @@
         margin-top: 20px;
         cursor: pointer;
         font-size: 16px;
+        padding-left: 85px;
       }
 
       .open-video iron-icon {
@@ -128,16 +132,18 @@
         <animatable-content name="home">
           <div class="container" center-justified>
             <div class="home-wrapper">
-              <iron-image class="logo" src="/images/logo-light.svg" sizing="contain"
+              <iron-image class="logo" src="/images/logo-white.svg" sizing="contain"
                           alt="Mobile Era 2017"></iron-image>
               <h3 class="dates">{$ dates $}</h3>
               <h2 class="motto">{$ motto $}</h2>
-              <div class="open-video" on-tap="_openVideo">
-                <iron-icon icon="play"></iron-icon>
-                {$ playIcon $}
-              </div>
+
               <div class="action-buttons">
                 <paper-button class="primary" on-tap="_scrollToTickets" raised>{$ buyTicket $}</paper-button>
+              </div>
+
+                            <div class="open-video" on-tap="_openVideo">
+                <iron-icon icon="play"></iron-icon>
+                {$ playIcon $}
               </div>
             </div>
           </div>

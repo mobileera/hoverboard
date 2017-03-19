@@ -12,8 +12,8 @@
     <style include="shared-styles">
       :host {
         display: block;
-        background: var(--default-primary-color);
-        color: var(--text-primary-color);
+        background: var(--accent-color);
+        color: #fff;
       }
 
       .container {
@@ -25,6 +25,10 @@
         @apply(--layout-flex-auto);
         @apply(--layout-self-center);
         margin-bottom: 0 !important;
+      }
+
+      .open-dialog-button {
+        color: #fff;
       }
 
       @media (max-width: 599px) {
@@ -46,7 +50,21 @@
 
     <div class="container container-narrow">
       <h4 class="heading">{$ callToAction.videoTitle $}</h4>
-      <paper-button class="open-dialog-button" on-tap="playVideo">{$ action $}</paper-button>
+      <a href="http://2016.mobileera.rocks">
+      <paper-button class="open-dialog-button">Website</paper-button>
+      </a>
+            <a href="https://www.facebook.com/pg/mobileeraconf/photos/?tab=albums">
+      <paper-button class="open-dialog-button">Photos</paper-button>
+      </a>
+            <a href="https://vimeo.com/mobileera/">
+      <paper-button class="open-dialog-button">Videos</paper-button>
+      </a>
+    </div>
+
+    <div class="container container-narrow">
+
+    <iframe width="854" height="480" src="https://www.youtube.com/embed/-5svVhDWJPU" frameborder="0" allowfullscreen></iframe>
+
     </div>
 
   </template>
