@@ -2,8 +2,8 @@
   "entrypoint": "index.html",
   "shell": "src/hoverboard-app.html",
   "fragments": [
-    "src/pages/blog-list.html",
-    "src/pages/blog-page.html",
+    "src/pages/news-list.html",
+    "src/pages/news-page.html",
     "src/pages/cod-page.html",
     "src/pages/home-page.html",
     "src/pages/post-page.html",

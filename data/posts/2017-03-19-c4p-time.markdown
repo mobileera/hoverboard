@@ -13,6 +13,30 @@ To keep up this year, we decided to focus on the content. **We’re looking for 
 
 <br/>
 
+Mobile Era will feature a mix of international and Norwegian speakers with a focus on the international crowd. The conference will give most space to experienced speakers who are experienced in speaking on their subjects, but will leave some room for more novice speakers as well.
+
+If you are experienced in presenting a technical or design topic within mobile, we would like to hear from you. Send us a proposal below, tweet at us, or send an email.
+
+The conference will reimburse speaker travel and hotel costs. If you want, we can also help you organize for-pay workshops during your stay in Oslo
+
+#### Formats
+* 45 minute talks
+* 10 minute lightning talks
+
+#### Language
+* English
+
+#### Themes and topics – what do we expect?
+* iOS Development
+* Android Development
+* Windows Phone Development
+* Mobile Design (both graphical and UX)
+* Internet of Things
+* Mobile Web technologies (PWAs, Cordova etc.)
+* Cross-platform technologies (Xamarin, React-Native etc.)
+* The Business of Mobile
+
+
 ### Why is it cool to be a speaker?
 
 Well, do you know a better way to attend the conference? Here are our top 3 reasons to [submit a proposal](http://bit.ly/mobileera17-cfp).

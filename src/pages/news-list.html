@@ -13,7 +13,7 @@
 <link rel="import" href="../behaviors/cascaded-behavior.html">
 
 
-<dom-module id="blog-list">
+<dom-module id="news-list">
 
   <template>
 
@@ -92,7 +92,7 @@
 
     <div class="container posts-container">
       <template is="dom-repeat" items="[[posts]]" as="post" on-dom-change="updateCascadedNodes">
-        <a href$="/blog/posts/[[post.id]]/" class="post"
+        <a href$="/news/posts/[[post.id]]/" class="post"
            style$="background-color: [[post.primaryColor]];" cascaded>
           <iron-image class="image" src="[[post.image]]" style$="background-color: [[post.primaryColor]];"
                       sizing="cover" preload fade></iron-image>
@@ -110,7 +110,7 @@
 
       Polymer({
 
-        is: 'blog-list',
+        is: 'news-list',
 
         behaviors: [
           HOVERBOARD.PageBehavior,

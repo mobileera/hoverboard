@@ -3,8 +3,8 @@
   "startDate": "2017-10-09T09:00:00+01:00",
   "endDate": "2017-10-10T19:00:00+01:00",
   "analytics": {
-    "prod": "UA-70868154-5",
-    "dev": "UA-70868154-5"
+    "prod": "UA-70868154-3",
+    "dev": "UA-70868154-3"
   },
   "organizer": {
     "name": "Mobile Era Conference",
@@ -112,6 +112,7 @@
       "title": "News",
       "headerSettings": {
         "backgroundColor": "#00aac6",
+        "backgroundImage": "/images/backgrounds/news.jpg",
         "fontColor": "#fff",
         "tabBarColor": "#fff"
       }
@@ -120,6 +121,7 @@
       "title": "Cod of Conduct",
       "headerSettings": {
         "backgroundColor": "#00aac6",
+        "backgroundImage": "/images/backgrounds/cod.jpg",
         "fontColor": "#fff",
         "tabBarColor": "#fff"
       }

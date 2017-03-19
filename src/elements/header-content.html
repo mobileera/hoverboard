@@ -139,6 +139,10 @@
 
               <div class="action-buttons">
                 <paper-button class="primary" on-tap="_scrollToTickets" raised>{$ buyTicket $}</paper-button>
+
+                <a href="/news/posts/c4p-time/">
+                <paper-button class="primary" raised>Call for papers</paper-button>
+                </a>
               </div>
 
                             <div class="open-video" on-tap="_openVideo">
@@ -148,15 +152,15 @@
             </div>
           </div>
         </animatable-content>
-        <animatable-content name="blog">
+        <animatable-content name="news">
           <div class="container">
-            <h3 class="page-title" hidden$="{{app.headerSettings.title}}">{$ pages.blog.title $}</h3>
+            <h3 class="page-title" hidden$="{{app.headerSettings.title}}">{$ pages.news.title $}</h3>
             <h3 class="page-title" hidden$="{{!app.headerSettings.title}}">[[app.headerSettings.title]]</h3>
             <div class="page-subtitle" hidden$="{{!app.headerSettings.subtitle}}">[[app.headerSettings.subtitle]]</div>
           </div>
         </animatable-content>
         {% for page, settings in pages %}
-          {% if page !== 'home' and page !== 'blog' %}
+          {% if page !== 'home' and page !== 'news' %}
             <animatable-content name="{$ page $}">
               <div class="container">
                 <h3 class="page-title">{$ settings.title $}</h3>

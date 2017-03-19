@@ -175,10 +175,10 @@
                      posts="{{posts}}"
                      videos="{{videos}}"></home-page>
 
-          <blog-page name="blog"
+          <news-page name="news"
                      app="{{app}}"
                      route="{{subRoute}}"
-                     posts="{{posts}}"></blog-page>
+                     posts="{{posts}}"></news-page>
 
           <speakers-page name="speakers"
                          app="{{app}}"
@@ -268,7 +268,7 @@
             HOVERBOARD.ServiceWorkerRegistration.register();
             this.importHref(this.resolveUrl('pages/schedule-page.html'), null, null, true);
             this.importHref(this.resolveUrl('pages/speakers-page.html'), null, null, true);
-            this.importHref(this.resolveUrl('pages/blog-page.html'), null, null, true);
+            this.importHref(this.resolveUrl('pages/news-page.html'), null, null, true);
           }.bind(this));
         },
 

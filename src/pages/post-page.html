@@ -143,7 +143,7 @@
           <div class="latest-post">
             <div hidden$="[[!_latestPosts.0]]">
               <span class="latest-post-label">Next post</span>
-              <a href$="/blog/posts/[[_latestPosts.0.id]]/"
+              <a href$="/news/posts/[[_latestPosts.0.id]]/"
                  class="post" cascaded>
                 <iron-image class="image" src="[[_latestPosts.0.image]]"
                             style$="background-color: [[_latestPosts.0.primaryColor]];" sizing="cover"
@@ -158,7 +158,7 @@
           <div class="latest-post">
             <div hidden$="[[!_latestPosts.1]]">
               <span class="latest-post-label">Previous post</span>
-              <a href$="/blog/posts/[[_latestPosts.1.id]]/"
+              <a href$="/news/posts/[[_latestPosts.1.id]]/"
                  class="post" cascaded>
                 <iron-image class="image" src="[[_latestPosts.1.image]]"
                             style$="background-color: [[_latestPosts.1.primaryColor]];" sizing="cover"
@@ -238,7 +238,7 @@
 
         _postLoaded: function () {
           this.postId = null;
-          HOVERBOARD.Analytics.trackEvent('blog', 'open post', this._post.title);
+          HOVERBOARD.Analytics.trackEvent('news', 'open post', this._post.title);
         },
 
         _updateHeaderSettings: function () {

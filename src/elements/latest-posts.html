@@ -104,7 +104,7 @@
         _postsChanged: function () {
           var temp = this.posts.slice(0, 2);
           for (var i = 0, len = temp.length; i < len; i++) {
-            temp[i].url = '/blog/posts/' + temp[i].id + '/';
+            temp[i].url = '/news/posts/' + temp[i].id + '/';
           }
           this._posts = temp;
         }
