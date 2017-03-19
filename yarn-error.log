@@ -1,0 +1,61 @@
+Arguments: 
+  /usr/local/Cellar/node/7.5.0/bin/node /Users/salnikov/.npm-packages/bin/yarn
+
+PATH: 
+  /Users/salnikov/.npm-packages/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  0.17.2
+
+Node version: 
+  7.5.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "hoverboard",
+    "version": "1.2.0",
+    "description": "Conference website template",
+    "scripts": {
+    	"gulp": "gulp",
+    	"bower": "bower",
+      "build": "gulp",
+      "postinstall": "bower install",
+      "serve": "gulp serve"
+    },
+    "devDependencies": {
+      "bower": "^1.8.0",
+      "browser-sync": "^2.18.0",
+      "connect-history-api-fallback": "^1.3.0",
+      "css-slam": "^1.2.0",
+      "del": "^2.2.0",
+      "gulp": "github:gulpjs/gulp#4.0",
+      "gulp-cli": "^1.2.0",
+      "gulp-htmlmin": "^3.0.0",
+      "gulp-if": "^2.0.0",
+      "gulp-imagemin": "^3.1.0",
+      "gulp-nunjucks": "^3.0.0",
+      "gulp-replace": "^0.5.0",
+      "gulp-uglify": "^2.0.0",
+      "merge-stream": "^1.0.0",
+      "plylog": "^0.4.0",
+      "polymer-build": "^0.7.0",
+      "require-uncached": "^1.0.0",
+      "sw-precache": "^5.0.0"
+    },
+    "engines": {
+      "node": ">=4.0"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: ENOENT: no such file or directory, lstat '/Users/salnikov/Library/Caches/Yarn/npm-gulp-4.0.0-alpha.2-9aed27af7e41a33aa338748c0d3f78c9cc24d557'

@@ -1,22 +1,22 @@
 {
-  "url": "https://mobileera-2017.firebaseapp.com/",
-  "startDate": "2016-09-09T09:00:00+03:00",
-  "endDate": "2016-09-10T19:00:00+03:00",
+  "url": "https://mobileera.rocks",
+  "startDate": "2017-10-09T09:00:00+01:00",
+  "endDate": "2017-10-10T19:00:00+01:00",
   "analytics": {
-    "prod": "UA-43643469-8",
-    "dev": "UA-43643469-9"
+    "prod": "UA-70868154-5",
+    "dev": "UA-70868154-5"
   },
   "organizer": {
-    "name": "GDG Lviv",
-    "twitter": "gdglviv"
+    "name": "Mobile Era Conference",
+    "twitter": "MobileEraConf"
   },
   "webapp": {
-    "shortName": "DevFest",
+    "shortName": "Mobile Era",
     "themeColor": "#F57C00",
     "backgroundColor": "#F57C00"
   },
   "firebase": {
-    "name": "mobileera-2017",
+    "name": "Mobile Era 2017 Conference",
     "domain": "mobileera-2017.firebaseapp.com",
     "database": "https://mobileera-2017.firebaseio.com",
     "api": "AIzaSyDfSSni61obigR8vpYa_GjIFZsFKUkXRew",
@@ -25,14 +25,14 @@
     "indexedDbSession": "hoverboard"
   },
   "mailchimp": {
-    "url": "https://gdg.us11.list-manage.com/subscribe/post?u=b7e853a79164ddfdbda3ed77b&amp;id=7993e39fbe",
-    "name": "b_b7e853a79164ddfdbda3ed77b_7993e39fbe"
+    "url": "https://github.us12.list-manage.com/subscribe/post?u=fa5d127dc57bce862da2801bd&amp;id=a6547c75c0",
+    "name": "fa5d127dc57bce862da2801bd_a6547c75c0"
   },
-  "hashtag": "dfua",
-  "disqusShortName": "hoverboard-gdg-x",
-  "tweetsSource": "/data/tweets.json",
-  "partnershipProposition": "http://bit.ly/df16-sponsor",
-  "videosSessionsUrl": "https://www.youtube.com/playlist?list=PLt8lEzcLNl31AX3-ONkkWmDOZezu9Cmnv",
+  "hashtag": "mobileera",
+  "disqusShortName": "mobileera",
+  "tweetsSource": "http://webmax.ru/tweetledee/favoritesjson.php?c=10&cache_interval=8000",
+  "partnershipProposition": "mailto:contact@mobileera.rocks",
+  "videosSessionsUrl": "https://vimeo.com/mobileera/",
   "enableSessionsRating": true,
   "navigation": [
     {
@@ -42,55 +42,38 @@
     {
       "route": "blog",
       "permalink": "/blog/"
-    },
-    {
-      "route": "schedule",
-      "permalink": "/schedule/"
-    },
-    {
-      "route": "speakers",
-      "permalink": "/speakers/"
-    },
-    {
-      "route": "team",
-      "permalink": "/team/"
     }
   ],
   "social": [
     {
       "name": "twitter",
-      "nickname": "GDGLviv",
-      "url": "https://twitter.com/gdglviv"
-    },
-    {
-      "name": "gplus",
-      "nickname": "102444623953913144164",
-      "url": "https://plus.google.com/102444623953913144164"
+      "nickname": "Twitter: @mobileeraconf",
+      "url": "https://twitter.com/MobileEraConf"
     },
     {
       "name": "facebook",
-      "nickname": "GDGLviv",
-      "url": "https://www.facebook.com/GDGLviv"
+      "nickname": "Facebook: Mobile Era Conf",
+      "url": "https://www.facebook.com/MobileEraConf"
     },
     {
       "name": "linkedin",
-      "nickname": "google-developers-group-lviv",
-      "url": "https://www.linkedin.com/company/google-developers-group-lviv"
+      "nickname": "LinkedIn: Mobile Era Conference",
+      "url": "https://www.linkedin.com/company/mobile-era-conference"
     }
   ],
   "location": {
-    "apiKey": "",
-    "name": "Pivdennyi Expo Center",
-    "address": "36 Shchyretska St, Lviv, Ukraine",
-    "link": "https://www.facebook.com/expopivdennij",
+    "apiKey": "AIzaSyDfSSni61obigR8vpYa_GjIFZsFKUkXRew",
+    "name": "Felix Conference Centre",
+    "address": "Bryggetorget 3, 0125 Oslo",
+    "link": "http://www.felixkonferanse.no/",
     "pointer": {
-      "latitude": 49.809841,
-      "longitude": 23.972805,
+      "latitude": 59.9101662,
+      "longitude": 10.7250782,
       "zoom": 15
     },
     "mapCenter": {
-      "latitude": 49.809841,
-      "longitude": 23.982805
+      "latitude": 59.9101662,
+      "longitude": 10.7250782
     },
     "images": [
       "/images/backgrounds/location_1.jpg",
@@ -99,12 +82,12 @@
     ]
   },
   "gallery": {
-    "albumUrl": "https://plus.google.com/events/gallery/cc6tosp4ohkp6qj9pg5jb4g6o3k?sort=1",
+    "albumUrl": "https://www.facebook.com/pg/mobileeraconf/photos/?tab=albums",
     "photos": {
-      "big": "/images/backgrounds/2015_1.jpg",
+      "big": "/images/backgrounds/2016_1.jpg",
       "small": [
-        "/images/backgrounds/2015_2.jpg",
-        "/images/backgrounds/2015_3.jpg"
+        "/images/backgrounds/2016_2.jpg",
+        "/images/backgrounds/2016_3.jpg"
       ]
     }
   },
@@ -113,12 +96,12 @@
       "title": "Home",
       "headerSettings": {
         "backgroundColor": "#FF9800",
-        "backgroundImage": "/images/backgrounds/home.png",
+        "backgroundImage": "/images/backgrounds/home.jpg",
         "fontColor": "#fff",
         "tabBarColor": "#fff",
         "video": {
-          "title": "GDG DevFest Ukraine 2016",
-          "youtubeId": "TdpbgRgz6eE",
+          "title": "Mobile Era 2017",
+          "youtubeId": "Z5a1WNE14Nw",
           "text": "See how it was in 2016"
         },
         "hideLogo": true,
@@ -129,6 +112,14 @@
       "title": "Blog",
       "headerSettings": {
         "backgroundColor": "#03a9f4",
+        "fontColor": "#fff",
+        "tabBarColor": "#fff"
+      }
+    },
+    "cod": {
+      "title": "Cod of Conduct",
+      "headerSettings": {
+        "backgroundColor": "#673ab7",
         "fontColor": "#fff",
         "tabBarColor": "#fff"
       }
@@ -153,14 +144,6 @@
       "title": "Team",
       "headerSettings": {
         "backgroundColor": "#009688",
-        "fontColor": "#fff",
-        "tabBarColor": "#fff"
-      }
-    },
-    "cod": {
-      "title": "Cod of Conduct",
-      "headerSettings": {
-        "backgroundColor": "#673ab7",
         "fontColor": "#fff",
         "tabBarColor": "#fff"
       }
