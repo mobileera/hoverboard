@@ -1,4 +1,4 @@
-Mobile Era Conference team is proud to announce the second annual Mobile Era 2017 which is the largest mobile related event in Nordics carefully crafted by community! The event will take place on **19-20th of October** in **Oslo**.
+Mobile Era Conference team is proud to announce the second annual Mobile Era 2017 which is the largest mobile related event in Nordics carefully crafted by community! The event will take place on **5-6 of October** in **Oslo**.
 
 ### What to expect
 
