@@ -42,6 +42,26 @@
     {
       "route": "news",
       "permalink": "/news/"
+    },
+    {
+      "route": "speakers",
+      "permalink": "/speakers/"
+    },
+    {
+      "route": "team",
+      "permalink": "/team/"
+    },
+    {
+      "route": "workshops",
+      "permalink": "/workshops/"
+    },
+    {
+      "route": "sponsors",
+      "permalink": "/sponsors/"
+    },
+    {
+      "route": "logistics",
+      "permalink": "/logistics/"
     }
   ],
   "social": [
@@ -121,7 +141,7 @@
       "title": "Code of Conduct",
       "headerSettings": {
         "backgroundColor": "#00aac6",
-        "backgroundImage": "/images/backgrounds/cod.jpg",
+        "backgroundImage": "/images/backgrounds/news.jpg",
         "fontColor": "#fff",
         "tabBarColor": "#fff"
       }
@@ -130,6 +150,7 @@
       "title": "Speakers",
       "headerSettings": {
         "backgroundColor": "#00aac6",
+        "backgroundImage": "/images/backgrounds/news.jpg",
         "fontColor": "#fff",
         "tabBarColor": "#fff"
       }
@@ -138,6 +159,7 @@
       "title": "Schedule",
       "headerSettings": {
         "backgroundColor": "#00aac6",
+        "backgroundImage": "/images/backgrounds/news.jpg",
         "fontColor": "#fff",
         "tabBarColor": "#fff"
       }
@@ -146,6 +168,34 @@
       "title": "Team",
       "headerSettings": {
         "backgroundColor": "#00aac6",
+        "backgroundImage": "/images/backgrounds/news.jpg",
+        "fontColor": "#fff",
+        "tabBarColor": "#fff"
+      }
+    },
+    "workshops": {
+      "title": "Workshops",
+      "headerSettings": {
+        "backgroundColor": "#00aac6",
+        "backgroundImage": "/images/backgrounds/news.jpg",
+        "fontColor": "#fff",
+        "tabBarColor": "#fff"
+      }
+    },
+    "logistics": {
+      "title": "Logistics",
+      "headerSettings": {
+        "backgroundColor": "#00aac6",
+        "backgroundImage": "/images/backgrounds/news.jpg",
+        "fontColor": "#fff",
+        "tabBarColor": "#fff"
+      }
+    },
+    "sponsors": {
+      "title": "Sponsors",
+      "headerSettings": {
+        "backgroundColor": "#00aac6",
+        "backgroundImage": "/images/backgrounds/news.jpg",
         "fontColor": "#fff",
         "tabBarColor": "#fff"
       }

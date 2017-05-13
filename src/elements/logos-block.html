@@ -54,8 +54,8 @@
 
       .logo-img {
         @apply(--layout-flex);
-        height: 140px;
-        width: 140px;
+        height: 200px;
+        width: 200px;
       }
 
       .logo-img.info {
@@ -65,10 +65,9 @@
     </style>
 
     <div class="container">
-      <h4 class="heading text-center">{$ partners $}</h4>
       <template is="dom-repeat" items="[[app.partners]]" as="block">
         <div class="logos-block-wrapper">
-          <h5 class="logos-block-title text-center">[[block.title]]</h5>
+          <h4 class="logos-block-title heading text-center">[[block.title]]</h4>
           <div class="logos">
             <template is="dom-repeat" items="[[block.logos]]" as="logo">
               <a class="logo-item" href="[[logo.url]]" title="[[logo.name]]" target="_blank" rel="noopener noreferrer">
