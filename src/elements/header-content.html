@@ -71,7 +71,7 @@
 
       .logo {
         width: 280px;
-        min-height: 80px;
+        min-height: 65px;
       }
 
       .dates {
@@ -81,14 +81,14 @@
       }
 
       .motto {
-        margin-top: 20px;
+        margin-top: 10px;
         font-size: 22px;
         line-height: 1;
         padding-left: 85px;
       }
 
       .action-buttons {
-        margin-top: 40px;
+        margin-top: 20px;
         padding-left: 85px;
       }
 
@@ -121,8 +121,18 @@
         }
 
         app-toolbar {
-          min-height: 360px;
+          min-height: 240px;
         }
+        
+
+      }
+
+      @media (max-width: 600px) {
+        .action-buttons paper-button {
+          margin-bottom: 10px;
+          width: 100%;
+        }
+
       }
 
     </style>
@@ -134,8 +144,7 @@
             <div class="home-wrapper">
               <iron-image class="logo" src="/images/logo-white.svg" sizing="contain"
                           alt="Mobile Era 2017"></iron-image>
-              <h3 class="dates">{$ dates $}</h3>
-              <h2 class="motto">{$ locationAddressShort $}</h2>
+              <h2 class="dates">{$ dates $}, {$ locationAddressShort $}</h2>
 
               <div class="action-buttons">
                 <paper-button class="primary" on-tap="_scrollToTickets" raised>{$ buyTicket $}</paper-button>

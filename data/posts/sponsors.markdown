@@ -31,7 +31,8 @@ Based Service App using Beacons
 Sponsor tiers
         
 ### Web sponsor
-__20.000,- NOK + 25% mva__
+__20.000,- NOK + 25% mva__  
+*≈ €2100*
 - Logo on web page
 - Logo on intro for videos from
 the conference
@@ -40,7 +41,8 @@ the conference
 - 1 free ticket
 
 ### Stand sponsor
-__30.000,- NOK + 25% mva__
+__30.000,- NOK + 25% mva__  
+*≈ €3200*
 - Everything included in Web sponsor tier
 - Roll-up with bar table in venue
 - 2 free tickets (includes stand
@@ -55,5 +57,5 @@ groups in return for special mention
 workshop ticket sales
 - Party sponsor - distribute drink tickets with your logo to participants
 
-## [Download Sponsor Packages PDF](/images/MobileEra2017-CallForSponsors.pdf)
+## [Download Sponsor Packages PDF](https://bit.ly/mobileera-sponsors)
 

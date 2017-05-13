@@ -9,7 +9,10 @@
     "src/pages/post-page.html",
     "src/pages/schedule-page.html",
     "src/pages/speakers-page.html",
-    "src/pages/team-page.html"
+    "src/pages/team-page.html",
+    "src/pages/logistics-page.html",
+    "src/pages/workshops-page.html",
+    "src/pages/sponsors-page.html"
   ],
   "sources": [
     "data/**/*",
