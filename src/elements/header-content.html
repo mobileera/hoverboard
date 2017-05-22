@@ -127,6 +127,20 @@
 
       }
 
+      .badge {
+        color: #fff;
+        background-color: #e0343d;
+        font-size: 11px;
+        padding: 1px 3px;
+        display: inline-block;
+        position: absolute;
+        top: -8px;
+        right: -10px;
+        border-radius: 3px;
+        text-transform: initial;
+        font-weight: bold;
+      }
+
       @media (max-width: 600px) {
         .action-buttons paper-button {
           margin-bottom: 10px;
@@ -147,14 +161,10 @@
               <h2 class="dates">{$ dates $}, {$ locationAddressShort $}</h2>
 
               <div class="action-buttons">
-                <paper-button class="primary" on-tap="_scrollToTickets" raised>{$ buyTicket $}</paper-button>
-
-                <a href="/news/posts/c4p-time/">
-                <paper-button class="primary" raised>Call for papers</paper-button>
-                </a>
+                <paper-button class="primary" on-tap="_scrollToTickets" raised>{$ getYourTicket $}<span class="badge">Early Bird price</span></paper-button>
               </div>
 
-                            <div class="open-video" on-tap="_openVideo">
+              <div class="open-video" on-tap="_openVideo">
                 <iron-icon icon="play"></iron-icon>
                 {$ playIcon $}
               </div>

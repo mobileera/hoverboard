@@ -34,5 +34,14 @@
     "secondaryColor": "#CBB714",
     "image": "/images/posts/blog_3.jpg",
     "brief": "The call for papers will run until 21st of May, get your submission in before then to have the opportunity to speak at Mobile Era this year."
+  },
+  {
+    "id": "call-for-papers-is-over",
+    "title": "Call for Papers is over",
+    "posted": "2017-05-22",
+    "primaryColor": "#00aac6",
+    "secondaryColor": "#CBB714",
+    "image": "/images/posts/blog_3.jpg",
+    "brief": "We received a lot of amazing technical talks submissions, enough to hold some Mobile Eras in a row. But we'll pick only the best for you! Hard work for program committees is ahead!"
   }
 ]

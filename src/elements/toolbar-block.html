@@ -129,6 +129,20 @@
         font-size: 14px;
         cursor: pointer;
       }
+
+      .badge {
+        color: #fff;
+        background-color: #CBB714;
+        font-size: 11px;
+        padding: 1px 3px;
+        display: inline-block;
+        position: absolute;
+        top: -8px;
+        right: -10px;
+        border-radius: 3px;
+        text-transform: initial;
+        font-weight: bold;
+      }
     </style>
 
     <app-toolbar id="mainToolbar">
@@ -187,11 +201,8 @@
 
         <div class="action-button-wrapper" hidden$="[[app.isPhoneSize]]" layout horizontal center-center>
           <a href="[[app.tickets.url]]" target="_blank" rel="noopener noreferrer" on-tap="_trackBuyClick">
-            <paper-button class="action-button">{$ buyTicket $}</paper-button>
+            <paper-button class="action-button">Buy Early Bird Ticket<span class="badge">2400NOK+MVA</span></paper-button>
           </a>
-                          <a href="/news/posts/c4p-time/">
-                <paper-button class="action-button">Call for papers</paper-button>
-                </a>
         </div>
       </div>
     </app-toolbar>
