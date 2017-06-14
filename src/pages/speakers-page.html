@@ -177,10 +177,6 @@
                data="{{routeData}}"></app-route>
 
     <div class="container speakers-container">
-
-    <p>
-      We will announce the first speakers soon!
-    </p>
     
       <template is="dom-repeat" items="[[_toArray(speakers)]]" as="speaker" on-dom-change="updateCascadedNodes">
         <div class="speaker" cascaded>
