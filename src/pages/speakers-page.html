@@ -177,7 +177,7 @@
                data="{{routeData}}"></app-route>
 
     <div class="container speakers-container">
-    
+
       <template is="dom-repeat" items="[[_toArray(speakers)]]" as="speaker" on-dom-change="updateCascadedNodes">
         <div class="speaker" cascaded>
           <paper-material class="card">
@@ -200,7 +200,7 @@
             </a>
             <a href$="/speakers/[[speaker.id]]/" class="card-content">
               <iron-image class="company-logo" src="{{speaker.companyLogo}}" sizing="contain"></iron-image>
-              <div class="tags">{$ skills $}:
+              <div class="tags">
                 <template is="dom-repeat" items="[[speaker.tags]]" as="tag">
                   <span class="tag" style$="{{_getCustomStyleValue(tag)}}">[[tag]]</span>
                 </template>
