@@ -43,5 +43,14 @@
     "secondaryColor": "#CBB714",
     "image": "/images/posts/blog_3.jpg",
     "brief": "We received a lot of amazing technical talks submissions, enough to hold some Mobile Eras in a row. But we'll pick only the best for you! Hard work for program committees is ahead!"
+  },
+  {
+    "id": "first-speakers-announced",
+    "title": "The first speakers have been announced!",
+    "posted": "2017-06-20",
+    "primaryColor": "#00aac6",
+    "secondaryColor": "#CBB714",
+    "image": "/images/posts/blog_1.jpg",
+    "brief": "We have selected the best of the submitted talks, look through the list and see if your favorite speaker will be coming!"
   }
 ]
