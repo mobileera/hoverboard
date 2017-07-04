@@ -52,5 +52,14 @@
     "secondaryColor": "#CBB714",
     "image": "/images/posts/blog_1.jpg",
     "brief": "We have selected the best of the submitted talks, look through the list and see if your favorite speaker will be coming!"
+  },
+  {
+    "id": "lightning-talks-cfp",
+    "title": "We are looking for more Lightning Talks!",
+    "posted": "2017-07-03",
+    "primaryColor": "#00aac6",
+    "secondaryColor": "#CBB714",
+    "image": "/images/posts/blog_3.jpg",
+    "brief": "We are looking for additional speakers to hold lightning talks at the conference."
   }
 ]
