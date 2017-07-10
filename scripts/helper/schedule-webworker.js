@@ -39,8 +39,69 @@ function getEndTime(date, startTime, endTime, totalNumber, number) {
 
 self.addEventListener('message', function (e) {
   var speakers = e.data.speakers;
+  var instructors = e.data.instructors;
   var sessions = e.data.sessions;
+  var workshops = e.data.workshops;
   var schedule = e.data.schedule;
+
+  for (var i = 0, instructorsLen = instructors.length; i < instructorsLen; i++) {
+    instructors[i].workshop = new Object()
+    instructors[i].workshop.price = "2990 NOK + VAT"
+    var workshopId = instructors[i].workshopId
+    if (workshops != null) {
+      for (var j = 0, workshopsLen = workshops.length; j < workshopsLen; j++) {
+        if (workshopId == workshops[j].id) {
+          instructors[i].workshop = workshops[j]
+          break
+        }
+      }
+    } 
+
+    // test
+    if (instructors[i].id == 228) {
+      instructors[i].workshop.title = "Continuous Deployment: Automate your app release process with fastlane"
+      instructors[i].workshop.description = `Releasing an app to the AppStore or PlayStore is a daunting, time consuming, and error-prone process. Worst of all, this chore is usually reserved for your most senior team members. Did it pass all of your tests? Did you add all of the necessary screenshots in every language? Did you remember to bump the version number? Do you have the information for all of the required fields on the AppStore?
+ 
+  Imagine saving hours of time automating this process. And having the confidence that a new team member can release an app on their first day on the job, right from the command line!
+  With *fastlane*, you can automate your entire release process for iOS and Android to achieve Continuous Deployment. After this workshop, you will be able to automatically:
+  1. Create screenshots
+  2. Resolve code signing and provisioning issues
+  3. Submit the app the App or Play Stores
+  4. Invite beta testers
+  5. And explore more tools via fastlane plugins!
+ 
+This workshop is for mobile developers ready to submit their app for the first time, as well as developers who are tired of having to do it all of the time.`
+      instructors[i].workshop.price = "2990 NOK + VAT"
+    }
+    if (instructors[i].id == 229) {
+      instructors[i].workshop.title = "Reactive Programming with RxSwift"
+      instructors[i].workshop.description = `RxSwift is a trending framework for Reactive Programming in Swift. It has been around since 2 years now and has a constant growth and new users daily.
+    In this workshop you will be introduced to RxSwift gradually,  starting from the basics of Observables and Subscriptions to most advanced concepts like Traits and RxCocoa.
+    The workshop will guide you gradually thought:
+  1. Intro to Observables
+  2. Intro to Subjects
+  3. Basic Operators
+  4. Advanced Operators
+  5. Intro to RxCocoa 
+  6. Testing with RxSwift`
+    }
+    if (instructors[i].id == 230) {
+      instructors[i].workshop.title = "Kotlin for Java developers"
+      instructors[i].workshop.description = `The Kotlin programming language is developed by JetBrains and now is an officially-supported language for Android Development. This full-day workshop aims to share with you the power and the beauty of the language. We imply that you consider using Kotlin in your every-day work and want to feel more confident with the language first. We'll have a basic overview of the language, as well as the discussion of some corner cases, especially concerning Java interoperability. The workshop is based on your Java experience; it shows the similarities between two languages and focuses on what's going to be different.
+    We'll cover:
+  * Basic syntax
+  * Nullability
+  * Object-oriented programming
+  * Functional programming
+  * Java interoperability
+  * Building DSLs`
+    }
+    if (instructors[i].id == 231) {
+      instructors[i].workshop.title = "Building Cross Platform Native Mobile Apps using React Native"
+      instructors[i].workshop.description = `In this full-day workshop, you will learn the fundamentals of building cross-platform mobile apps targeting iOS and Android devices using React Native. React Native lets you build mobile apps using only JavaScript, without the need to use languages like Objective-C, Swift, or Java. Although you write JavaScript with React Native, the components you define will end up rendering as native widgets on the respective platforms. Hence, React Native allows you to write truly native applications, with the ease and speed of development and debugging using JavaScript.`
+    }
+
+  }
 
   schedule.tags = [];
   for (var i = 0, scheduleLen = schedule.length; i < scheduleLen; i++) {
@@ -65,7 +126,9 @@ self.addEventListener('message', function (e) {
 
   self.postMessage({
     speakers: speakers,
+    instructors: instructors,
     sessions: sessions,
+    workshops: workshops,
     schedule: schedule
   });
 }, false);
