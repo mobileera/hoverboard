@@ -121,6 +121,7 @@
     <app-data
       app="{{app}}"
       speakers="{{speakers}}"
+      instructors="{{instructors}}"
       sessions="{{sessions}}"
       schedule="{{schedule}}"
       posts="{{posts}}"
@@ -202,7 +203,9 @@
                     app="{{app}}"></sponsors-page>
 
           <workshops-page name="workshops"
-                    app="{{app}}"></workshops-page>
+                         app="{{app}}"
+                         route="{{subRoute}}"
+                         speakers="{{instructors}}"></workshops-page>
 
           <cod-page name="cod"
                     app="{{app}}"></cod-page>
@@ -278,6 +281,7 @@
             HOVERBOARD.ServiceWorkerRegistration.register();
             this.importHref(this.resolveUrl('pages/schedule-page.html'), null, null, true);
             this.importHref(this.resolveUrl('pages/speakers-page.html'), null, null, true);
+            this.importHref(this.resolveUrl('pages/workshops-page.html'), null, null, true);
             this.importHref(this.resolveUrl('pages/news-page.html'), null, null, true);
           }.bind(this));
         },

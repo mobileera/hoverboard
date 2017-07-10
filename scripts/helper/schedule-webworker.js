@@ -39,6 +39,7 @@ function getEndTime(date, startTime, endTime, totalNumber, number) {
 
 self.addEventListener('message', function (e) {
   var speakers = e.data.speakers;
+  var instructors = e.data.instructors;
   var sessions = e.data.sessions;
   var schedule = e.data.schedule;
 
@@ -65,6 +66,7 @@ self.addEventListener('message', function (e) {
 
   self.postMessage({
     speakers: speakers,
+    instructors: instructors,
     sessions: sessions,
     schedule: schedule
   });
