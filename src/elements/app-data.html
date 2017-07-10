@@ -119,6 +119,20 @@
       persisted-data="{{_instructorsRaw}}">
     </app-indexeddb-mirror>
 
+    <firebase-document
+      id="queryWorkshops"
+      app-name="{$ firebase.name $}"
+      path="/workshops"
+      data="{{_firebaseWorkshopsRaw}}">
+    </firebase-document>
+
+    <app-indexeddb-mirror
+      session="{$ firebase.indexedDbSession $}"
+      key="workshops"
+      data="{{_firebaseWorkshopsRaw}}"
+      persisted-data="{{_workshopsRaw}}">
+    </app-indexeddb-mirror>
+
   </template>
   <script>
     (function () {
@@ -153,6 +167,11 @@
             notify: true
           },
 
+          workshops: {
+            type: Array,
+            notify: true
+          },
+
           sessions: {
             type: Array,
             notify: true
@@ -171,6 +190,10 @@
             type: Object
           },
 
+          _workshopsRaw: {
+            type: Object
+          },
+
           _sessionsRaw: {
             type: Object
           },
@@ -181,7 +204,7 @@
         },
 
         observers: [
-          '_generateSchedule(_speakersRaw, _instructorsRaw, _sessionsRaw, _scheduleRaw)'
+          '_generateSchedule(_speakersRaw, _instructorsRaw, _sessionsRaw, _workshopsRaw, _scheduleRaw)'
         ],
 
         ready: function () {
@@ -192,6 +215,7 @@
         if (!Object.keys(this._speakersRaw).length
           || !Object.keys(this._instructorsRaw).length
           || !Object.keys(this._sessionsRaw).length
+          || !Object.keys(this._workshopsRaw).length
           || !Object.keys(this._scheduleRaw).length) return;
 
         var myWorker = new Worker('./scripts/helper/schedule-webworker.js');
@@ -200,6 +224,7 @@
           speakers: this._speakersRaw,
           instructors: this._instructorsRaw,
           sessions: this._sessionsRaw,
+          workshops: this.__workshopsRaw,
           schedule: this._scheduleRaw
         });
 
@@ -207,7 +232,9 @@
           this.set('schedule', e.data.schedule);
           this.set('instructors', e.data.instructors);
           this.set('sessions', e.data.sessions);
+          this.set('workshops', e.data.workshops);
           this.set('speakers', e.data.speakers);
+
           myWorker.terminate();
         }.bind(this), false);
 

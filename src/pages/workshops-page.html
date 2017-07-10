@@ -57,6 +57,34 @@
         cursor: pointer;
       }
 
+      .badge {
+        color: #fff;
+        background-color: #CBB714;
+        font-size: 11px;
+        padding: 1px 3px;
+        display: inline-block;
+        position: absolute;
+        top: -8px;
+        right: -10px;
+        border-radius: 3px;
+        text-transform: initial;
+        font-weight: bold;
+      }
+
+     .action-button-wrapper {
+        margin-top: 0px;
+        margin-bottom: 36px;
+        position: relative;
+      }
+
+      .action-button {
+        color: var(--primary-text-color);
+        background: #49C2D5;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
       .bio {
         color: var(--primary-text-color);
       }
@@ -141,7 +169,7 @@
 
       @media (min-width: 961px) {
         .speaker {
-          width: calc(100% / 3 - 2 * var(--grid-gutter));
+          width: calc(100% / 2 - 2 * var(--grid-gutter));
         }
 
       }
@@ -181,7 +209,7 @@
       <template is="dom-repeat" items="[[_toArray(speakers)]]" as="speaker" on-dom-change="updateCascadedNodes">
         <div class="speaker" cascaded>
           <paper-material class="card">
-            <a href$="/speakers/[[speaker.id]]/" class="header">
+            <a href$="/workshops/[[speaker.id]]/" class="header">
               <iron-image src="[[speaker.photoUrl]]" class="photo placeholder-color" preload fade
                           sizing="cover"></iron-image>
               <div class="photo-overlay"></div>
@@ -199,7 +227,7 @@
                 <!-- <span class="title">[[speaker.country]]</span> -->
               </div>
             </a>
-            <a href$="/speakers/[[speaker.id]]/" class="card-content">
+            <a href$="/workshops/[[speaker.id]]/" class="card-content">
               <iron-image class="company-logo" src="{{speaker.companyLogo}}" sizing="contain"></iron-image>
               <!--
               <div class="tags">{$ skills $}:
@@ -208,9 +236,25 @@
                 </template>
               </div>
               -->
-              <marked-element class="details-text" markdown="[[speaker.shortBio]]">
+              <marked-element class="details-text" markdown="<em>[[speaker.shortBio]]</em>">
                 <div class="markdown-html"></div>
               </marked-element>
+
+              <!-- HEADER -->
+              <marked-element class="details-text" markdown="<h1>[[speaker.workshop.title]]<h1>">
+                <div class="markdown-html"></div>
+              </marked-element>
+
+              <!-- BODY -->
+              <marked-element class="details-text" markdown="[[speaker.workshop.description]]">
+                <div class="markdown-html"></div>
+              </marked-element>
+
+              <div class="action-button-wrapper" hidden$="[[app.isPhoneSize]]" layout horizontal center-center>
+                <a href="[[app.tickets.url]]" target="_blank" rel="noopener noreferrer" on-tap="_trackBuyClick">
+                  <paper-button class="action-button">Buy Early Bird Ticket<span class="badge">[[speaker.workshop.price]]</span></paper-button>
+                </a>
+              </div>
             </a>
             <div class="card-actions">
               <template is="dom-repeat" items="[[speaker.socials]]" as="social">
@@ -266,6 +310,10 @@
           },
 
           speakers: {
+            type: Object
+          },
+
+          workshops: {
             type: Object
           },
 
