@@ -179,7 +179,6 @@
           <div class="session-content" flex>
             <h2 class="session-title">[[session.title]]</h2>
             <ul class="session-meta">
-              <li hidden$="[[!session.language]]">[[session.language]]</li>
               <li hidden$="[[!session.complexity]]">[[session.complexity]]</li>
               <li hidden$="[[!session.track.title]]">[[session.track.title]]</li>
             </ul>
@@ -228,7 +227,7 @@
                 <iron-icon icon="account"></iron-icon>
                 <div class="person-detail" flex>
                   <span class="speaker-name">[[speaker.name]]</span>
-                  <div class="speaker-title">[[speaker.company]] / [[speaker.country]]</div>
+                  <div class="speaker-title">[[speaker.company]] <span hidden$="[[!speaker.country]]"> / [[speaker.country]]</span></div>
                 </div>
               </div>
             </template>
