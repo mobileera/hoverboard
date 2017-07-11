@@ -224,7 +224,7 @@
           speakers: this._speakersRaw,
           instructors: this._instructorsRaw,
           sessions: this._sessionsRaw,
-          workshops: this.__workshopsRaw,
+          workshops: this._workshopsRaw,
           schedule: this._scheduleRaw
         });
 
@@ -234,7 +234,6 @@
           this.set('sessions', e.data.sessions);
           this.set('workshops', e.data.workshops);
           this.set('speakers', e.data.speakers);
-
           myWorker.terminate();
         }.bind(this), false);
 
