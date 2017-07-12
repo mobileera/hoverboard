@@ -12,7 +12,8 @@ function getSession(session, day, dayIndex, schedule, speakersRaw) {
   if (session.speakers) {
     for (var j = 0, speakersLen = session.speakers.length; j < speakersLen; j++) {
       if (!session.speakers[j].id) {
-        session.speakers[j] = speakersRaw[session.speakers[j]];
+        var speakerId = session.speakers[j];
+        session.speakers[j] = speakersRaw.find(function(x) { return x.id == speakerId });
         var tempSession = JSON.parse(JSON.stringify(session));
         delete tempSession.speakers;
         if (session.speakers[j]) {

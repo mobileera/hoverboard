@@ -40,6 +40,10 @@
       "permalink": "/"
     },
     {
+      "route": "schedule",
+      "permalink": "/schedule/"
+    },
+    {
       "route": "news",
       "permalink": "/news/"
     },
