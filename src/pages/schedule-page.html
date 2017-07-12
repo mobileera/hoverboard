@@ -39,6 +39,8 @@
       schedule-day {
         margin-bottom: 64px;
       }
+
+      neon-animated-pages .iron-selected { position: relative; }
     </style>
 
     <app-route
@@ -86,8 +88,9 @@
             schedule="[[schedule]]"
           ></my-schedule>
         </template>
-      </neon-animated-pages>
     </div>
+
+    <footer-block app="{{app}}" cascaded></footer-block>
 
     <session-details
       id="sessionDetails"
