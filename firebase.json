@@ -12,6 +12,7 @@
       }
     ],
     "ignore": [
+      "/test/**",
       "bower.json",
       "database.rules.json",
       "firebase.json",
