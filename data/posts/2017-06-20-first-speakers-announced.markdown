@@ -19,9 +19,10 @@ from futurehome.no will introduce you to several different ways of building your
 in this new technology.
 
 * Frode Nilsen, *Three technology options for building native Android apps* &mdash;
-Frode will offer a few on the different options available for developing native
-apss on Android, which one is the best for your needs? Working as Schibstedt he
-will present different options against the <a href="http://vg.no">vg.no</a> backend.
+Frode will go through the options available for developing native apps on Android:
+Native, Xamarin or React Native. Which one is the best for your needs? From his
+experience working at Schibstedt he will present different options against the vg.no
+backend.
 
 * Wei-Meng Lee - *Building cross-platform native mobile apps using React Native* &mdash;
 React Native is the new kid on the block, but how does it work and how can you be efficient
