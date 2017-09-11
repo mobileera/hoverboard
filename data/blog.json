@@ -70,5 +70,23 @@
     "secondaryColor": "#CBB714",
     "image": "/images/posts/blog_2.jpg",
     "brief": "You can now browse to the schedule on the site and see all the talks."
+  },
+  {
+    "id": "lightning-talks-cfp-is-over",
+    "title": "Lightning Talks CfP is over",
+    "posted": "2017-08-15",
+    "primaryColor": "#00aac6",
+    "secondaryColor": "#CBB714",
+    "image": "/images/posts/blog_2.jpg",
+    "brief": "We have finished selecting lightning talks for this year."
+  },
+  {
+    "id": "scholarship-programme",
+    "title": "Scholarship programme",
+    "posted": "2017-09-04",
+    "primaryColor": "#00aac6",
+    "secondaryColor": "#CBB714",
+    "image": "/images/posts/blog_2.jpg",
+    "brief": "Apply to the scholarship program."
   }
 ]
