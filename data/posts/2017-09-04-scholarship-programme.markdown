@@ -34,7 +34,7 @@ Just fill in the form. Submission is open until September 20th.
 
 <a class="btn btn-default" href="https://goo.gl/forms/Wgzj6M5ItbltXvXW2">SCHOLARSHIP PROGRAMME APPLICATION</a>
 
-All applicants will be notified via email by Septmebr 22th. If your application is accepted, you will receive
+All applicants will be notified via email by September 22th. If your application is accepted, you will receive
 your conference registration details and other relevant information along with the notification.
 
 Any questions?
