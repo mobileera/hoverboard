@@ -12,8 +12,8 @@
   },
   "webapp": {
     "shortName": "Mobile Era",
-    "themeColor": "#00aac6",
-    "backgroundColor": "#00aac6"
+    "themeColor": "#00a9c5",
+    "backgroundColor": "#00a9c5"
   },
   "firebase": {
     "name": "Mobile Era 2017 Conference",

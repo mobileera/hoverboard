@@ -1,6 +1,5 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 
-<link rel="import" href="../../bower_components/iron-dropdown/iron-dropdown-scroll-manager.html">
 <link rel="import" href="../../bower_components/iron-image/iron-image.html">
 
 <link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
@@ -36,8 +35,22 @@
         </div>
         <div id="title" class="bottom title toolbar-title" hidden$="{{!app.isPhoneSize}}">[[speaker.name]]</div>
       </paper-toolbar>
-
       <div class="content">
+
+              
+                                  <!-- HEADER -->
+                                  <marked-element class="details-text" markdown="<h1>[[speaker.workshop.title]]<h1>">
+                                    <div class="markdown-html"></div>
+                                  </marked-element>
+                    
+                                  <!-- BODY -->
+                                  <marked-element class="details-text" markdown="[[speaker.workshop.description]]">
+                                    <div class="markdown-html"></div>
+                                  </marked-element>
+              
+
+
+
         <div class="metadata-wrapper">
           <div class="main-info">
             <div class="photo" style$="background-image: url('[[speaker.photoUrl]]')" hidden$="{{app.isPhoneSize}}"></div>
@@ -53,7 +66,7 @@
           </div>
         </div>
 
-        <marked-element markdown="[[speaker.bio]]">
+        <marked-element markdown="[[speaker.shortBio]]">
           <div class="markdown-html"></div>
         </marked-element>
 
@@ -67,6 +80,8 @@
 
       </div>
 
+
+
       <template is="dom-if" if="{{speaker.sessions.length}}">
         <div class="sections-wrapper content">
           <h4 class="block-title">{$ sessions $}</h4>
@@ -75,18 +90,13 @@
               <div class="section">
                 <div class="section-info">
                   <h3 class="section-title">[[session.title]]</h3>
-                  <div class="badges">
-                    <template is="dom-repeat" items="[[session.tags]]" as="tag">
-                      <span class="badge" target="_blank" rel="noopener noreferrer">[[tag]]</span>
-                    </template>
-                  </div>
+
                   <truncate-marked-text
                     text="[[session.description]]"
                     characters="220"
                     break-last-word
                   ></truncate-marked-text>
-                  <a class="read-more" href$="/schedule/day[[session.day]]?sessionId=[[session.id]]" dialog-dismiss>{$ readMore $}</a>
-
+                  <a class="read-more" hidden$="{{!session.day}}" href$="/schedule/day[[session.day]]?sessionId=[[session.id]]" dialog-dismiss>{$ readMore $}</a>
                 </div>
               </div>
             </template>
@@ -134,10 +144,7 @@
         },
 
         _speakerChanged: function () {
-          var generatedClass = this._generateClass(this.speaker.tags[0]);
-          this.customStyle['--paper-scroll-header-panel-color'] = 'var(--' + generatedClass + ')';
           this._previousBrowserColor = HOVERBOARD.Util.getMetaThemeColor();
-          HOVERBOARD.Util.setMetaThemeColor(this.getComputedStyleValue('--' + generatedClass));
 
           if (this.app.isPhoneSize) {
             this.$.scrollHeaderPanel.$.headerBg.style.background = 'linear-gradient(to top, rgba(0, 0, 0, 0.4) -10%, rgba(0, 0, 0, 0.1) 50%), url(' + this.speaker.photoUrl + ') 0 / cover no-repeat';
@@ -165,15 +172,13 @@
 
         _onNeonAnimationFinish: function () {
           if (this.opened) {
-            Polymer.IronDropdownScrollManager.pushScrollLock(this.$.scrollHeaderPanel);
+            document.body.style.overflow = 'hidden';
             this._finishRenderOpened();
           } else {
-            Polymer.IronDropdownScrollManager.removeScrollLock(this.$.scrollHeaderPanel);
+            document.body.style.overflow = '';
             this._finishRenderClosed();
           }
-
         }
-
       });
 
     }());
