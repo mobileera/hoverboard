@@ -88,5 +88,14 @@
     "secondaryColor": "#CBB714",
     "image": "/images/posts/blog_2.jpg",
     "brief": "Apply to the scholarship program."
+  },
+  {
+    "id": "2017-09-28-get-ready-for-mobile-era",
+    "title": "Get Ready for Mobile Era 2017",
+    "posted": "2017-09-28",
+    "primaryColor": "#00aac6",
+    "secondaryColor": "#CBB714",
+    "image": "/images/posts/blog_3.jpg",
+    "brief": "Mobile Era is just one week away! Here's what's going to happen!"
   }
 ]
