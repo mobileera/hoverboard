@@ -158,6 +158,14 @@
       .speaker-title {
         font-size: 13px;
       }
+
+      .section-photo {
+        @apply(--img-circle);
+        margin-right: var(--content-padding);
+        width: 60px;
+        height: 60px;
+        z-index: 1;
+      }
     </style>
 
     <a
@@ -224,7 +232,7 @@
 
             <template is="dom-repeat" items="[[session.speakers]]" as="speaker">
               <div class="speaker" layout horizontal center>
-                <iron-icon icon="account"></iron-icon>
+                <div class="section-photo" style$="background-image: url('[[speaker.photoUrl]]')"></div>
                 <div class="person-detail" flex>
                   <span class="speaker-name">[[speaker.name]]</span>
                   <div class="speaker-title">[[speaker.company]] <span hidden$="[[!speaker.country]]"> / [[speaker.country]]</span></div>
@@ -286,7 +294,7 @@
 
         ready: function () {
           this.async(function () {
-            this.sessionColor = this.getComputedStyleValue('--' + this._generateClass(this.session.mainTag));
+            this.sessionColor = this.getComputedStyleValue('--' + this._generateClass(this.session.track.title));
           });
         },
 
