@@ -228,20 +228,6 @@
       </div>
     </nav>
 
-    <div class="info-banner" layout horizontal justified>
-      <div class="legend" layout horizontal wrap>
-        <template is="dom-repeat" items="[[schedule.tags]]" as="tag">
-          <div class="legend-item">
-            <i class="point"
-               style$="background: [[_getCustomStyleValue(tag)]]"></i>[[tag]]
-          </div>
-        </template>
-      </div>
-      <div class="filters" hidden$="[[!_filtersLabel]]">
-        {$ filteredBy $} [[_filtersLabel]]
-      </div>
-    </div>
-
   </template>
 
   <script>
