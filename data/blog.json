@@ -97,5 +97,14 @@
     "secondaryColor": "#CBB714",
     "image": "/images/posts/blog_3.jpg",
     "brief": "Mobile Era is just one week away! Here's what's going to happen!"
+  },
+  {
+    "id": "day2",
+    "title": "Welcome to Day 2 of Mobile Era",
+    "posted": "2017-10-06",
+    "primaryColor": "#00aac6",
+    "secondaryColor": "#CBB714",
+    "image": "/images/posts/me17.jpg",
+    "brief": "Mobile Era's first day was great! Let us share a sneak peek at group photo and announce the contest!"
   }
 ]

@@ -120,7 +120,7 @@
       "title": "Home",
       "headerSettings": {
         "backgroundColor": "#00aac6",
-        "backgroundImage": "/images/backgrounds/home.jpg",
+        "backgroundImage": "/images/backgrounds/home17.jpg",
         "fontColor": "#fff",
         "tabBarColor": "#fff",
         "video": {
@@ -178,7 +178,7 @@
       }
     },
     "workshops": {
-      "title": "Workshops - October 4th",
+      "title": "Workshops",
       "headerSettings": {
         "backgroundColor": "#00aac6",
         "backgroundImage": "/images/backgrounds/news.jpg",
